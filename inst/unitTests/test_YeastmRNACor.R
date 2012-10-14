@@ -6,7 +6,7 @@ test_defaultThreshold <- function()
     checkTrue(file.exists(filename))
     correlation.list <- correlationFinder(filename)   # cor.threshold is 0.85
     checkEquals(length(correlation.list), 75)
-    checkEquals(length(as.character(unlist (correlation.list))), 172)
+    checkEquals(length(as.character(unlist(correlation.list))), 172)
   }
 
 test_perfectCorrelationThreshold <- function()
